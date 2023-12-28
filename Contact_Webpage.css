@@ -34,9 +34,6 @@ footer a{
     text-decoration: none;
     color: var(--footer_text--color);
 }
-footer li{
-    list-style: none;
-}
 
 
 /*background footer*/
@@ -50,6 +47,9 @@ h5{
 }
 .name{
     color: var(--main--color);
+}
+.name:hover{
+    text-decoration: underline;
 }
 .mail input{
     padding: 5px 55px;
@@ -110,22 +110,20 @@ textarea:focus, .mail input:focus{
 }
 .join_me a:hover{
     background-color: var(--main--color);
-    transform: scale(1.25);
     transition: all ease .7s;
     color: var(--primary--color);
 }
-
-.join_me .icon{
-    margin-right: 10px;
-}
-.join_me span p{
+.join_me p{
     color: var(--footer_text--color);
     font-size: 15px;
 }
-.join_me span p:hover{
+.join_me p:hover{
     color: var(--secondary--color);
 }
-
+.join_me .inline div{
+    display: inline-block;
+    vertical-align: bottom;
+}
 
 
 /*options "Aller à" */
@@ -133,12 +131,16 @@ textarea:focus, .mail input:focus{
     width: 100px;
 }
 .options li{
-    padding-bottom: 5px;
+    list-style: none;
 }
-.options ul a:hover{
+.options a{
+    padding-bottom: 5px;
+    display: flex;
+}
+.options a:hover{
     color: var(--main--color);
     font-weight: 700;
-    transition: all ease .9s;
+    transition: all ease .3s;
     font-size: 17px;
 }
 .last{
